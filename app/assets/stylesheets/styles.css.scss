@@ -1,0 +1,37 @@
+/* Change font here */
+$basefontfamily: Oxygen;
+@import url(http://fonts.googleapis.com/css?family=Oxygen);
+
+/*Change background of Navbar -- REMEMBER TO USE $ INSTEAD OF @ */
+$navbarBackgroundHighlight: orange;
+$navbarBackground: orange;
+
+/*Change background of Primary Button -- REMEMBER TO USE $ INSTEAD OF @ */
+
+$btnPrimaryBackground: green;
+
+/* Give top of body padding to not overlap with header - using Bootstrap*/
+@import 'bootstrap';
+
+body {
+	padding-top: 60px;
+}
+
+/* Use Bootstrap Responsive*/
+
+@import 'bootstrap-responsive';
+
+/* Remove shadow from   - using Bootstrap responsive*/
+.navbar-inner {
+	@include box-shadow(none !important);
+	border: 0;
+}
+
+/* Give footer margin for more space betweeen it and body - using Bootstrap responsive*/
+.footer {
+	margin-top: 50px;
+	color: $grayLight;
+	a {
+		color: $gray;
+	}
+} 
