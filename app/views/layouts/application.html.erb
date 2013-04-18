@@ -8,8 +8,14 @@
 	</head>
 
 	<body>
+
 		<%= render 'Layouts/header' %>
-		<%= yield %>
-		<%= render 'Layouts/footer' %>  
+		
+		<div class="container">
+			<% flash.each do |name, msg| %>
+					<%= content_tag(:div, msg, class: "alert alert-#{name}") %>
+			<% end %>
+			<%= yield %>
+			<%= render 'Layouts/footer' %>  
 	</body>
 </html>
