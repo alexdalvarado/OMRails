@@ -3,16 +3,51 @@
 -->
 
 
-<div class="hero-unit">
+<div class="hero-unit text-center">
 
-		<h1>Welcome to One Month Rails!</h1>
+		<h1>LivEDM</h1>
 		<p>
-			You found the home page for the
-			<%= link_to "One Month Rails", "http://onemonthrails.com" %>
-			application.
+			<em>Your source for Electronic Dance Music</em>
 		</p>
 
 		<p>
-			<%= link_to "Sign Up Now!", new_user_registration_path, class: "btn btn-primary btn-large" %>
+			<%= link_to "Sign Up Now!", new_user_registration_path, class: "btn btn-info btn-large" %>
+
 		</p>
+
 </div>
+
+
+
+<ul class="thumbnails">
+  <li class="span4">
+    <div class="thumbnail">
+      <img data-src="holder.js/300x200" alt="">
+      <h3>
+				<%= link_to "Live Sets", "#", class: "btn btn-inverse btn-block btn-large" %>
+      </h3>
+      <p>Thumbnail caption...</p>
+    </div>
+  </li>
+
+  <li class="span4">
+    <div class="thumbnail">
+      <img data-src="holder.js/300x200" alt="">
+      <h3> 
+      	<%= link_to "Hot New Songs", "#", class: "btn btn-inverse btn-block btn-large" %>
+     	</h3>
+      <p>Thumbnail caption...</p>
+    </div>
+  </li>
+
+  <li class="span4">
+    <div class="thumbnail">
+      <img data-src="holder.js/300x200" alt="">
+      <h3>
+      	<%= link_to "Explore New DJs", "#", class: "btn btn-inverse btn-block btn-large" %>
+      </h3>
+      <p>Thumbnail caption...</p>
+    </div>
+  </li>
+
+</ul>
