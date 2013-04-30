@@ -8,7 +8,7 @@ class PinsController < ApplicationController
   def index
     #If you want to only show the pins that belong to individual users:
     #@pins = current_user.pins.all
-    @pins = Pin.all
+    @pins = Pin.order("created_at desc")
 
     respond_to do |format|
       format.html # index.html.erb
